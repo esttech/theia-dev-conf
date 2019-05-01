@@ -1,4 +1,4 @@
-baseURL = "http://example.org/"
+baseURL = "https://theia-dev-conf.netlify.com/"
 languageCode = "en-us"
 title = "Theia Developer Conference"
 theme = "infinity-hugo"
