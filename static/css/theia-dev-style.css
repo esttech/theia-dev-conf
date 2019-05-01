@@ -1,22 +1,22 @@
 /*--
-    dates start
+    team start
 --*/
-.dates {
+.team {
   text-align: center;
 }
 
-.dates .block {
+.team .block {
   margin-bottom: 50px;
 }
 
-.dates .block i {
+.team .block i {
   font-size: 30px;
   display: inline-block;
   margin-bottom: 15px;
   color: #1bafb4;
 }
 
-.dates .block h3 {
+.team .block h3 {
   color: #333333;
   font-weight: 600;
   font-size: 18px;
@@ -25,6 +25,6 @@
   text-transform: uppercase;
 }
 
-.dates .block p {
+.team .block p {
   color: #666;
 }

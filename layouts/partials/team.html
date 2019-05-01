@@ -1,18 +1,18 @@
-{{ if .Site.Params.dates.enable }}
+{{ if .Site.Params.team.enable }}
     {{"<!-- Dates Section -->" | safeHTML}}
-    <section id="dates" class="dates section">
+    <section id="team" class="team section">
         <div class="container">
             <div class="row">
-                <div class="heading wow fadeInUp">
-                    {{ with .Site.Params.dates.title }}
+                <div class="heading wow">
+                    {{ with .Site.Params.team.title }}
                         <h2>{{ . }}</h2>
                     {{ end }}
-                    {{ with .Site.Params.dates.subtitle }}
+                    {{ with .Site.Params.team.subtitle }}
                         <p>{{ . }}</p>
                     {{ end }}
                 </div>
-                {{ range .Site.Params.dates.datesItem }}
-                    <div class="col-sm-6 col-md-3 wow fadeInLeft" data-wow-delay="{{ .delay }}">
+                {{ range .Site.Params.team.teamItem }}
+                    <div class="col-sm-6 col-md-4 wow" data-wow-delay="{{ .delay }}">
                         <div class="block">
                             <i class="{{ .icon }}"></i>
                             <h3>{{ .title }}</h3>
