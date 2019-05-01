@@ -1,0 +1,26 @@
+{{ if .Site.Params.dates.enable }}
+    {{"<!-- Dates Section -->" | safeHTML}}
+    <section id="dates" class="dates section">
+        <div class="container">
+            <div class="row">
+                <div class="heading wow fadeInUp">
+                    {{ with .Site.Params.dates.title }}
+                        <h2>{{ . }}</h2>
+                    {{ end }}
+                    {{ with .Site.Params.dates.subtitle }}
+                        <p>{{ . }}</p>
+                    {{ end }}
+                </div>
+                {{ range .Site.Params.dates.datesItem }}
+                    <div class="col-sm-6 col-md-3 wow fadeInLeft" data-wow-delay="{{ .delay }}">
+                        <div class="block">
+                            <i class="{{ .icon }}"></i>
+                            <h3>{{ .title }}</h3>
+                            <p>{{ .description }}</p>
+                        </div>
+                    </div>
+                {{ end }}
+            </div>
+        </div>
+    </section>
+{{ end }}

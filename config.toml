@@ -10,6 +10,7 @@ theme = "infinity-hugo"
         logo = "images/logo.png"
         home = "Home"
         about = "About"
+        dates = "Dates"
 
     # Hero Area
     [params.hero]
@@ -25,5 +26,41 @@ theme = "infinity-hugo"
     # About Section
     [params.about]
         enable      = true
-        description = "We are pleased to invite you to the first Theia Developer Conference. There will be considerable focus on the Theia platform architecture and internals. There will also be some focus on the Theia “users” (more specifically Theia extenders). So, this conference welcomes the participation of Theia extenders, contributors and developers."
+        heading = "We are pleased to invite you to the first Theia Developer Conference. There will be considerable focus on the Theia platform architecture and internals. There will also be some focus on the Theia “users” (more specifically Theia extenders). So, this conference welcomes the participation of Theia extenders, contributors and developers."
+#        description = "The event will be held on June 4-5 (Tuesday & Wednesday), at the Ericsson Headquarters in Kista, Sweden. "
 
+    # Dates Section
+    [params.dates]
+        enable      = true
+        title       = "Important dates"
+        [[params.dates.datesItem]]
+            # give icon(themefisher icon font), title, description
+            # more about themefisher icon font visit https://github.com/themefisher/themefisher-font
+            icon    = "tf-ion-ios-calendar"
+            title   = "April 19"
+            description = "Deadline for submissions"
+            sortorder   = 1
+
+        [[params.dates.datesItem]]
+            # give icon(themefisher icon font), title, description
+            # more about themefisher icon font visit https://github.com/themefisher/themefisher-font
+            icon    = "tf-ion-ios-calendar"
+            title   = "April 30"
+            description = "Speakers notified of acceptance"
+            sortorder   = 2
+
+        [[params.dates.datesItem]]
+            # give icon(themefisher icon font), title, description
+            # more about themefisher icon font visit https://github.com/themefisher/themefisher-font
+            icon    = "tf-ion-ios-calendar"
+            title   = "April 30"
+            description = "Schedule published"
+            sortorder   = 3
+
+        [[params.dates.datesItem]]
+            # give icon(themefisher icon font), title, description
+            # more about themefisher icon font visit https://github.com/themefisher/themefisher-font
+            icon    = "tf-ion-ios-calendar"
+            title   = "June 4-5"
+            description = "Theia Developer Conference"
+            sortorder   = 4
