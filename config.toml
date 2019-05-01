@@ -1,0 +1,29 @@
+baseURL = "http://example.org/"
+languageCode = "en-us"
+title = "Theia Developer Conference"
+theme = "infinity-hugo"
+
+[params]
+
+    # Navigation
+    [params.navigation]
+        logo = "images/logo.png"
+        home = "Home"
+        about = "About"
+
+    # Hero Area
+    [params.hero]
+        enable      = true
+        bg          = "images/theia_hero.jpg"
+        title       = "Theia Developer Conference"
+        subtitle    = "4-5 June 2019, Kista, Sweden"
+        #btnText     = "Get Started"
+        countdownYear = "2019"
+        countdownMonth = "6"
+        countdownDay  = "4"
+
+    # About Section
+    [params.about]
+        enable      = true
+        description = "We are pleased to invite you to the first Theia Developer Conference. There will be considerable focus on the Theia platform architecture and internals. There will also be some focus on the Theia “users” (more specifically Theia extenders). So, this conference welcomes the participation of Theia extenders, contributors and developers."
+
