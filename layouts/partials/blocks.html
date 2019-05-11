@@ -1,7 +1,7 @@
 {{ if .Site.Params.blocks.enable }}
     {{"<!-- Blocks Section -->" | safeHTML}}
     {{ range (where .Data.Pages "Section" "blocks").ByParam "order" }}
-        <section id="about" class="section about">
+        <section id="{{ .Params.anchor }}" class="section about">
             <div class="container">
                 <div class="row">
                     <div class="col-md-12 wow text-center">
@@ -10,7 +10,6 @@
                                 {{ with .Title }}
                                     <h2>{{ . }}</h2>
                                 {{ end }}
-                            </div>
                             {{ with .Content }}
                                 <p>{{ . }}</p>
                             {{ end }}
@@ -25,6 +24,7 @@
                                     </div>
                                 </div>
                             {{ end }}
+                            </div>
                         </div>
                     </div>
                 </div>

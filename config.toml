@@ -10,6 +10,7 @@ theme = "infinity-hugo"
         logo = "images/logo.png"
         home = "Home"
         about = "About"
+        register = "Register"
 
     # Hero Area
     [params.hero]

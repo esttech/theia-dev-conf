@@ -1,5 +1,6 @@
 ---
 Title: Registration
+anchor: register
 btnText: "Register Now"
 btnLink: https://docs.google.com/forms/d/1QIeDufbvj7DvYM3nX7rdGqe2vpZiTdq-X5JYyag00Hc
 Draft: false
