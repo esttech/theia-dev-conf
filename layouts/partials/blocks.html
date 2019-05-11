@@ -1,21 +1,34 @@
 {{ if .Site.Params.blocks.enable }}
     {{"<!-- Blocks Section -->" | safeHTML}}
-    <section id="about" class="section about">
-      {{ range (where .Data.Pages "Section" "blocks").ByParam "order" }}
-        <div class="container">
-            <div class="row">
-                <div class="heading wow">
-                    {{ with .Title }}
-                        <h2>{{ . }}</h2>
-                    {{ end }}
-                </div>
-                <div class="content">
-                    {{ with .Content }}
-                        <p>{{ . | markdownify }}</p>
-                    {{ end }}
+    {{ range (where .Data.Pages "Section" "blocks").ByParam "order" }}
+        <section id="about" class="section about">
+            <div class="container">
+                <div class="row">
+                    <div class="col-md-12 wow text-center">
+                        <div class="block">
+                            <div class="heading wow">
+                                {{ with .Title }}
+                                    <h2>{{ . }}</h2>
+                                {{ end }}
+                            </div>
+                            {{ with .Content }}
+                                <p>{{ . }}</p>
+                            {{ end }}
+                            {{ if .Params.btnText }}
+                                <div class="col-lg-6 offset-lg-3">
+                                    <div class="input-group">
+                                        <div class="wow fadeInDown" data-wow-delay="0.7s" data-wow-duration=".7s">
+                                            <a class="btn btn-home" href="{{ .Params.btnLink }}" role="button">
+                                                {{ .Params.btnText }}
+                                            </a>
+                                        </div>
+                                    </div>
+                                </div>
+                            {{ end }}
+                        </div>
+                    </div>
                 </div>
             </div>
-        </div>
-      {{ end }}
-    </section>
+        </section>
+    {{ end }}
 {{ end }}
