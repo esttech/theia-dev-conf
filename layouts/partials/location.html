@@ -1,0 +1,20 @@
+{{ if .Site.Params.location.enable }}
+    {{"<!-- Location Section -->" | safeHTML}}
+    <section id="location" class="location section">
+        <div class="container">
+            <div class="row">
+                <div class="heading wow">
+                    {{ with .Site.Params.location.title }}
+                        <h2>{{ . }}</h2>
+                    {{ end }}
+                    <div class="block">
+                        {{ range .Site.Params.location.locationItem }}
+                            <i class="{{ .icon }}"> </i>
+                            <p><a href="{{ .link }}">{{ .address }}</a></p>
+                        {{ end }}
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+{{ end }}

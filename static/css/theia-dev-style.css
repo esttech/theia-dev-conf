@@ -1,4 +1,14 @@
 /*--
+    location start
+--*/
+.location .block i {
+  font-size: 30px;
+  display: inline-block;
+  margin-bottom: 15px;
+  color: #1bafb4;
+}
+
+/*--
     team start
 --*/
 .team {
