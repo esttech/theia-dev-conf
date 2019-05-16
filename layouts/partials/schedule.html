@@ -1,0 +1,36 @@
+{{ if .Site.Params.team.enable }}
+    {{"<!-- Team Section -->" | safeHTML}}
+    <section id="schedule" class="schedule section">
+        <div class="container">
+            <div class="row">
+                <div class="heading wow">
+                    {{ with .Site.Params.schedule.title }}
+                        <h2>{{ . }}</h2>
+                    {{ end }}
+                    {{ with .Site.Params.schedule.subtitle }}
+                        <p>{{ . }}</p>
+                    {{ end }}
+                </div>
+                <div class="col-md wow">
+                    <div class="block">
+                        <table class="table">
+                            {{ range .Site.Params.schedule.Day }}
+                                <thead>
+                                   <th colspan="2">{{ .titleDay }}</h2>
+                                </thead>
+                                <tbody class="table-bordered">
+                                    {{ range .sessionItem }}
+                                        <tr>
+                                            <td>{{ .time }}</td>
+                                            <td {{ if eq .type "break"  }} class="table-active" {{ end }}>{{ .description }}</td>
+                                        </tr>
+                                    {{ end }}
+                                </tbody>
+                            {{ end }}
+                        </table>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+{{ end }}

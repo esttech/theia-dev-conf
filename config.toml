@@ -44,6 +44,104 @@ theme = "infinity-hugo"
     [params.blocks]
         enable      = true
 
+    # Schedule Section
+    [params.schedule]
+        enable      = true
+        title       = "Schedule"
+        [[params.schedule.Day]]
+            titleDay = "Day 1: Tuesday, 4 June"
+            [[params.schedule.Day.sessionItem]]
+                time = "9:00-9:30"
+                description = "State of Theia - Sven Efftinge"
+
+            [[params.schedule.Day.sessionItem]]
+                time = "9:30-10:00"
+                description = "Theia towards VS Code Extensions - Florent Benoit"
+
+            [[params.schedule.Day.sessionItem]]
+                time = "10:00-10:30"
+                description = "TBD - Mike Milinkovich / Eclipse Foundation"
+
+            [[params.schedule.Day.sessionItem]]
+                time = "10:30-11:00"
+                description = "Break"
+                type = "break"
+
+            [[params.schedule.Day.sessionItem]]
+                time = "11:00-12:00"
+                description = "Fishbowl: Icebreaker, group discussion re Theia"
+
+            [[params.schedule.Day.sessionItem]]
+                time = "12:00-14:00"
+                description = "Lunch"
+                type = "break"
+
+            [[params.schedule.Day.sessionItem]]
+                time = "14:00-14:30"
+                description = "Non-coders experiences with a custom Theia application - Andreas Jakobik"
+
+            [[params.schedule.Day.sessionItem]]
+                time = "14:30-15:00"
+                description = "Implementing the Debug Adapter for Pig Latin - Anatolii Bazko"
+
+            [[params.schedule.Day.sessionItem]]
+                time = "15:00-15:30"
+                description = "Migrating Classic SAP WebIDE to Theia - Ido Perez"
+
+
+            [[params.schedule.Day.sessionItem]]
+                time = "15:30-16:00"
+                description = "Break"
+                type = "break"
+
+            [[params.schedule.Day.sessionItem]]
+                time = "16:00-17:00"
+                description = "Fishbowl: Towards Theia 1.0 (session leader: TBD)"
+
+        [[params.schedule.Day]]
+            titleDay = "Day 2: Wednesday, 5 June"
+            [[params.schedule.Day.sessionItem]]
+                time = "9:00-9:30"
+                description = "Mbed Studio - The desktop IDE for Mbed, powered by Theia - Arkadiusz Zaluski"
+
+            [[params.schedule.Day.sessionItem]]
+                time = "9:30-10:00"
+                description = "Developing Theia and VSC extensions for new generation of IBM z/OS Developers - Iurii Shchekochikhin"
+
+            [[params.schedule.Day.sessionItem]]
+                time = "10:00-10:30"
+                description = "Life of a Theia Widget - Anton Kosyakov"
+
+            [[params.schedule.Day.sessionItem]]
+                time = "10:30-11:00"
+                description = "Break"
+                type = "break"
+
+            [[params.schedule.Day.sessionItem]]
+                time = "11:00-11:30"
+                description = "The Busy RCP Developer's Guide to Eclipse Theia - Alex Tugarev"
+
+            [[params.schedule.Day.sessionItem]]
+                time = "11:30-12:00"
+                description = "Using Theia to take trace analysis and visualization to the next level - Simon Delisle"
+
+            [[params.schedule.Day.sessionItem]]
+                time = "12:00-14:00"
+                description = "Lunch"
+                type = "break"
+
+            [[params.schedule.Day.sessionItem]]
+                time = "14:00-14:30"
+                description = "Writing Plugin API - Thomas Mäder"
+
+            [[params.schedule.Day.sessionItem]]
+                time = "14:30-15:50"
+                description = "Towards a frictionless framework - Paul Maréchal (BOF/Fishbowl)"
+
+            [[params.schedule.Day.sessionItem]]
+                time = "15:30-16:00"
+                description = "Closing plenary"
+
     # Team Section
     [params.team]
         enable      = true
