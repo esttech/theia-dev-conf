@@ -1,20 +1,28 @@
 {{ if .Site.Params.location.enable }}
     {{"<!-- Location Section -->" | safeHTML}}
     <section id="location" class="location section">
-        <div class="container">
-            <div class="row">
-                <div class="heading wow">
-                    {{ with .Site.Params.location.title }}
-                        <h2>{{ . }}</h2>
-                    {{ end }}
-                    <div class="block">
-                        {{ range .Site.Params.location.locationItem }}
-                            <i class="{{ .icon }}"> </i>
-                            <p><a href="{{ .link }}">{{ .address }}</a></p>
-                        {{ end }}
-                    </div>
-                </div>
-            </div>
+          <div class="container">
+              <div class="row">
+                  <div class="heading wow">
+                      {{ with .Site.Params.location.title }}
+                          <h2>{{ . }}</h2>
+                      {{ end }}
+                      <div class="block">
+                          {{ range .Site.Params.location.locationItem }}
+                              <h3>The event takes place at the Ericsson HQ in Stockholm, Sweden.</h3>
+                              <p>Address: <a href="{{ .link }}">{{ .address }}</a> <i class="{{ .icon }}"> </i></p>
+                          {{ end }}
+                      </div>
+                      <h3>Hotel Recommendations</h3>
+                      <div class="block">
+                          <ul>
+                            <li><h4><a href="https://www.nordicchoicehotels.com/hotels/sweden/stockholm/comfort-hotel-kista/">Comfort Hotel Kista</a></h4>
+                            <li><h4><a href="http://connecthotels.se/kista/">Connect Hotel Kista</a></h4>
+                            <li><h4><a href="https://www.scandichotels.se/hotell/sverige/stockholm/scandic-kista">Scandic Kista</a></h4>
+                          </ul>
+                      </div>
+                  </div>
+              </div>
         </div>
     </section>
 {{ end }}

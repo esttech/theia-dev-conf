@@ -1,4 +1,11 @@
 /*--
+    about start
+--*/
+.about .content {
+  text-align: center;
+}
+
+/*--
     location start
 --*/
 .location .block i {
@@ -6,6 +13,28 @@
   display: inline-block;
   margin-bottom: 15px;
   color: #1bafb4;
+}
+
+.location.section {
+  background-image: url('/images/ericsson-hq.jpg');
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: cover;
+}
+.location .heading {
+  padding: 0;
+}
+.location h3 {
+  padding-bottom: 10px;
+}
+.location li {
+  padding-bottom: 5px;
+}
+
+.location .container {
+  background-color: rgba(255,255,255,0.9);
+  height: 100%;
+  padding: 50px;
 }
 
 /*--
