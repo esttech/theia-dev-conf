@@ -9,7 +9,6 @@ theme = "infinity-hugo"
     [params.navigation]
         logo = "images/logo.png"
         home = "Home"
-        about = "About"
         register = "Register"
         location = "Location"
         schedule = "Schedule"
@@ -18,7 +17,7 @@ theme = "infinity-hugo"
     [params.hero]
         enable      = true
         bg          = "images/theia_hero.jpg"
-        title       = "Theia Developer Conference"
+        title       = "Eclipse Theia Developer Conference"
         subtitle    = "4-5 June 2019, Stockholm, Sweden"
         #btnText     = "Get Started"
         countdownYear = "2019"
@@ -28,8 +27,8 @@ theme = "infinity-hugo"
     # About Section
     [params.about]
         enable      = true
-        heading = "We are pleased to invite you to the first Theia Developer Conference. There will be considerable focus on the Theia platform architecture and internals. There will also be some focus on the Theia “users” (more specifically Theia extenders). So, this conference welcomes the participation of Theia extenders, contributors and developers."
-#        description = "The event will be held on June 4-5 (Tuesday & Wednesday), at the Ericsson Headquarters in Kista, Sweden. "
+        heading = "We are pleased to invite you to the first Theia Developer Conference."
+        description = "This is the right place to get in touch with members from the community and discuss the platform architecture, internals and future of the Theia project. We welcome the participation of Theia extenders, contributors and developers. <br/>The event will be held on June 4-5 (Tuesday & Wednesday), at the Ericsson Headquarters in Kista, Sweden. "
 
     # Location Section
     [params.location]
@@ -71,7 +70,7 @@ theme = "infinity-hugo"
 
             [[params.schedule.Day.sessionItem]]
                 time = "11:00-12:00"
-                description = "Fishbowl: Icebreaker, group discussion re Theia"
+                description = "Fishbowl: TBD"
 
             [[params.schedule.Day.sessionItem]]
                 time = "12:00-14:00"
@@ -168,4 +167,4 @@ theme = "infinity-hugo"
             # more about themefisher icon font visit https://github.com/themefisher/themefisher-font
             icon    = "tf-ion-android-person"
             title   = "Sven Efftinge"
-            description = "Typefox"
+            description = "TypeFox"
