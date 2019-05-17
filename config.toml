@@ -97,7 +97,7 @@ theme = "infinity-hugo"
 
             [[params.schedule.Day.sessionItem]]
                 time = "16:00-17:00"
-                description = "Fishbowl: Towards Theia 1.0 (session leader: TBD)"
+                description = "Fishbowl: Towards Theia 1.0 - session leader: Andreas From"
 
         [[params.schedule.Day]]
             titleDay = "Day 2: Wednesday, 5 June"
