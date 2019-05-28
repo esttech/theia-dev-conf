@@ -61,7 +61,7 @@ theme = "infinity-hugo"
 
             [[params.schedule.Day.sessionItem]]
                 time = "10:00-10:30"
-                description = "TBD - Mike Milinkovich / Eclipse Foundation"
+                description = "TBD - Mikael Barbero"
 
             [[params.schedule.Day.sessionItem]]
                 time = "10:30-11:00"
